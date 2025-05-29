@@ -1,0 +1,24 @@
+# Environnement virtuel Python
+.venv/
+venv/
+__pycache__/
+
+# Fichiers générés par l'IDE
+.vscode/
+.idea/
+
+# Fichiers temporaires
+*.tmp
+*.log
+
+# Fichiers générés
+dist/
+build/
+# Fichiers sensibles (mots de passe, clés API)
+.env
+
+#fichiers locaux
+*.lnk
+
+#fichiers personnels
+/perso
