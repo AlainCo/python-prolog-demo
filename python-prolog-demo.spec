@@ -5,7 +5,7 @@ a = Analysis(
     ['src\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[('C:\\Program Files\\swipl\\bin\\libswipl.dll', 'swipl/bin/.'), ('c:\\program files\\swipl', 'swipl')],
+    datas=[('C:\\Program Files\\swipl\\bin\\libswipl.dll', 'swipl/bin/.'), ('C:\\Program Files\\swipl', 'swipl')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

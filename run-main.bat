@@ -1,4 +1,6 @@
 @echo off
 cd /d %~dp0
-set NAME=python-prolog-demo
-%~dp0dist\%NAME%.exe 
+set BASEDIR=%~dp0
+for /f %%i in ( "%BASEDIR:~0,-1%" ) do set DIRNAME=%%~ni
+
+%BASEDIR%dist\%DIRNAME%.exe 
