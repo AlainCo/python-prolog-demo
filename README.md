@@ -25,7 +25,7 @@ python src\main.py
 ```
 it should produce:
 ```json
-[{'X': 'john'}]
+[{'X': 'dan'}, {'X': 'lucy'}, {'X': 'john'}]
 ```
 
 ## run packaged version
@@ -34,8 +34,21 @@ dist\python-prolog-demo.exe
 ```
 it should produce same result:
 ```json
-[{'X': 'john'}]
+[{'X': 'dan'}, {'X': 'lucy'}, {'X': 'john'}]
 ```
+
+# Developer's info
+
+## bug in consult on windows
+I've found a bug with prolog.consult() on Windose. The backslash of windows paths are considered as escape by prolog. no way to change that as the path is built by pyswip using Path.
+
+The `PyswiplUtil.consult()` does nearly the same, but escaping the backslash... I've posted a message on pyswip googlegroup...
+Also it does all relative to the prolog folder, and the folder 
+
+## initialization of SWI Prolog...
+ther is a problem to initialize SWI Prolog when using pyinstaller... you need to package the installation folder of SWI Prolog, and adjuste some environment variables with pyinstaller informations...
+
+now it is done in prolog/init_pyswipl.py module . you have to import it before importing pyswip.
 
 # TODO:
 * Find things to do
@@ -47,4 +60,4 @@ it should produce same result:
 * Don't hesitate to share use case.
 
 # Credits: 
-Thanks to Grok for the teaching.
+Thanks to Grok, Claude, Deepseek, and Le Chat Mistral, for the teaching.
