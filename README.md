@@ -16,6 +16,8 @@ It was build and tested on windows.
 * install the requirements with `install_requirements.bat`
 * build the packaged application with `build.bat`
 
+Note that SWI-Prolog by PortableApps is a Win32 version, requiring a Win32 Python.
+
 # Usage
 
 ## run unpackaged
