@@ -12,3 +12,7 @@ from pyswip import Prolog
 prolog = Prolog()
 prolog.assertz("father(michael,john)")
 print(list(prolog.query("father(michael,X)")))
+
+# trigger bug with consult on windows
+prolog.consult(path=r'C:\\Develop\\python-prolog-demo\\src\\prolog\\family.pl') 
+print(list(prolog.query("father(michael,X)")))
