@@ -12,7 +12,7 @@ else:
 
 from pyswip import Prolog
 
-class PyswiplUtil:
+class PyswipUtil:
     def __init__(self):
         pass
         
