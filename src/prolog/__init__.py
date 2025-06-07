@@ -1,3 +1,3 @@
-from .init_pyswipl import PyswiplUtil
+from .init_pyswip import PyswipUtil
 
-__all__ = ['PyswiplUtil']
+__all__ = ['PyswipUtil']

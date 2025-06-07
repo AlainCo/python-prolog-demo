@@ -10,7 +10,7 @@ prolog_relative_to=Path(__file__).expanduser().parent
 
 from pyswip import Prolog
 
-class PyswiplUtil:
+class PyswipUtil:
     def __init__(self):
         pass
         
