@@ -6,9 +6,7 @@ from pathlib import Path
 if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
     os.environ['SWI_HOME_DIR'] = os.path.join(sys._MEIPASS,'swipl')
     os.environ['LIBSWIPL_PATH'] = os.path.join(sys._MEIPASS,'swipl/bin/libswipl.dll') #not required
-    prolog_relative_to=Path(os.path.join(sys._MEIPASS,'src/prolog'))
-else:
-    prolog_relative_to=Path(__file__).expanduser().parent
+prolog_relative_to=Path(__file__).expanduser().parent
 
 from pyswip import Prolog
 

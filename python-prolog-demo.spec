@@ -5,7 +5,7 @@ a = Analysis(
     ['src\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[('C:\\Program Files\\swipl\\bin\\libswipl.dll', 'swipl/bin/.'), ('C:\\Program Files\\swipl', 'swipl'), ('src/prolog/*.pl', 'src/prolog')],
+    datas=[('C:\\Program Files\\swipl\\bin\\libswipl.dll', 'swipl/bin/.'), ('C:\\Program Files\\swipl', 'swipl'), ('src/prolog/*.pl', 'prolog')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
