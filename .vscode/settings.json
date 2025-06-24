@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "codeline",
+        "pyswip"
+    ],
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "prolog.executablePath": "C:/Local/swipl/bin/swipl.exe"
+}
