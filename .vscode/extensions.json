@@ -10,7 +10,6 @@
         "esbenp.prettier-vscode",
         "alefragnani.project-manager",
         "ms-python.vscode-pylance",
-        "ms-python.python",
         "ms-python.debugpy",
         "demystifying-javascript.python-extensions-pack",
         "donjayamanne.python-extension-pack",
@@ -23,6 +22,7 @@
         "trabpukcip.wolf",
         "almenon.arepl",
         "njpwerner.autodocstring",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.autopep8"
     ]
 }
