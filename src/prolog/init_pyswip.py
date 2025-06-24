@@ -16,6 +16,6 @@ class PyswipUtil:
         
     def consult(self,prolog:Prolog,path,catcherrors: bool = False):
         """patch the pyswip consult method which dont manage backlash in windows path"""
-        #prolog.consult(relative_to=prolog_relative_to,path=path,catcherrors=catcherrors)
-        path = prolog_relative_to  / path
-        next(prolog.query(str(path).replace('\\','\\\\').replace('\'','\\\'').join(["consult('", "')"]), catcherrors=catcherrors))
+        prolog.consult(relative_to=prolog_relative_to,path=path,catcherrors=catcherrors)
+        #path = prolog_relative_to  / path
+        #next(prolog.query(str(path).replace('\\','\\\\').replace('\'','\\\'').join(["consult('", "')"]), catcherrors=catcherrors))
